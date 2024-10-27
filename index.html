@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="resultArea"></div>
+    <table class="key">
+      <tr>
+        <td onclick="deleteInt()"><</td>
+        <td onclick="op('%')">%</td>
+        <td onclick="op('**')">**</td>
+        <td onclick="clearResult()">del</td>
+      </tr>
+      <tr>
+        <td onclick="op(7)">7</td>
+        <td onclick="op(8)">8</td>
+        <td onclick="op(9)">9</td>
+        <td onclick="op('+')">+</td>
+      </tr>
+      <tr>
+        <td onclick="op(4)">4</td>
+        <td onclick="op(5)">5</td>
+        <td onclick="op(6)">6</td>
+        <td onclick="op('/')">/</td>
+      </tr>
+      <td onclick="op(1)">1</td>
+      <td onclick="op(2)">2</td>
+      <td onclick="op(3)">3</td>
+      <td onclick="op('*')">x</td>
+      <tr>
+        <td onclick="op('.')">,</td>
+        <td onclick="0">0</td>
+        <td id="result" onclick="calc()">=</td>
+        <td onclick="op( '-')">-</td>
+      </tr>
+    </table>
+  </body>
+</html>
